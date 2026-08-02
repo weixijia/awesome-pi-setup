@@ -124,6 +124,23 @@ network access. The command is intentionally unavailable in headless modes.
 
 ## 6. Interface and account visibility
 
+### [`pi-compact-transcript`](https://github.com/avhagedorn/pi-compact-transcript)
+
+Collapses thinking summaries and renders tool calls as one-line previews. Pi's
+native transcript gives every tool call its own block (command, output, timing),
+which gets noisy in long agentic runs.
+
+Pi already truncates long output on its own and `ctrl+o` (`app.tools.expand`)
+toggles collapse at runtime, but there is no persistent setting for the default
+state — that gap is what this extension fills.
+
+Chosen over [`pi-tool-display`](https://github.com/MasuRii/pi-tool-display),
+which targets the same problem but whose peer range still stops at
+`pi-coding-agent ^0.80.0`; this profile tracks 0.83.x.
+
+Pairs well with two personal display settings the installer deliberately does
+not manage: `"hideThinkingBlock": true` and `"outputPad": 0`.
+
 ### [`@narumitw/pi-statusline`](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-statusline)
 
 Provides a responsive footer showing model, Git, context, activity, and usage.

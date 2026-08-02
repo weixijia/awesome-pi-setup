@@ -113,6 +113,7 @@ Chaque extension est épinglée à une version exacte. Les liens renvoient direc
 | `pi-goal-list-loop-audit` | 0.34.20 | Workflows Goal/List/Loop assortis d'un audit indépendant | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
 | `@narumitw/pi-lsp` | 0.44.0 | Diagnostics, définitions, références et corrections LSP | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | Gestion interactive et sûre des worktrees Git | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
+| `pi-compact-transcript` | 0.6.2 | Résumés de réflexion repliés et aperçus d'outils sur une ligne | [avhagedorn/pi-compact-transcript](https://github.com/avhagedorn/pi-compact-transcript) |
 
 Les réglages nécessaires, commandes et précautions propres à chaque extension sont détaillés dans [`docs/PLUGINS.md`](docs/PLUGINS.md). Les valeurs d'intégrité npm et les liens vers les sources, lisibles par machine, figurent dans [`manifest/packages.json`](manifest/packages.json).
 

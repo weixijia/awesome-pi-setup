@@ -113,6 +113,7 @@ Every package is pinned to an exact version. Each link points to the maintainer'
 | `pi-goal-list-loop-audit` | 0.34.20 | Audited Goal/List/Loop workflows | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
 | `@narumitw/pi-lsp` | 0.44.0 | LSP diagnostics, definitions, references, and fixes | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | Safe interactive Git worktree management | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
+| `pi-compact-transcript` | 0.6.2 | Collapsed thinking summaries and one-line tool previews | [avhagedorn/pi-compact-transcript](https://github.com/avhagedorn/pi-compact-transcript) |
 
 Configuration requirements, commands, and caveats are documented in [`docs/PLUGINS.md`](docs/PLUGINS.md). Exact npm integrity values and machine-readable source links are in [`manifest/packages.json`](manifest/packages.json).
 

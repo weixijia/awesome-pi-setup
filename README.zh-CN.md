@@ -113,6 +113,7 @@ less install.sh
 | `pi-goal-list-loop-audit` | 0.34.20 | 带独立审计的 Goal/List/Loop | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
 | `@narumitw/pi-lsp` | 0.44.0 | LSP 诊断、定义、引用和修复 | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | 安全管理 Git Worktree | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
+| `pi-compact-transcript` | 0.6.2 | 折叠思考摘要，工具调用压成单行预览 | [avhagedorn/pi-compact-transcript](https://github.com/avhagedorn/pi-compact-transcript) |
 
 各插件的配置要求、命令和注意事项见 [`docs/PLUGINS.md`](docs/PLUGINS.md)。npm integrity 和机器可读的源码地址见 [`manifest/packages.json`](manifest/packages.json)。
 

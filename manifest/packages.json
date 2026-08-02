@@ -90,6 +90,12 @@
       "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree",
       "integrity": "sha512-ak/XIpVSLrc2PaGrgAhHJnyQzwVCZePnmMODltS8ahhnfRLqSoI17d5SOBNCoj7V4fd9UcDKRqHRQsNMtrkKPg==",
       "purpose": "Safe interactive Git worktree management"
+    },
+    {
+      "spec": "npm:pi-compact-transcript@0.6.2",
+      "repository": "https://github.com/avhagedorn/pi-compact-transcript",
+      "integrity": "sha512-1xfUu1/7peXgOmFd2Q+1FlEuArttSB4y4oJuCzVNuwJDS3atskrL5paEvXyhie5M1UKNpFDvFdeDzGuvAkio4w==",
+      "purpose": "Compact transcript: collapsed thinking summaries and one-line tool previews"
     }
   ],
   "removedPackages": [

@@ -75,6 +75,9 @@ pi install npm:@narumitw/pi-lsp@0.44.0
 
 # Git worktrees - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree
 pi install npm:@narumitw/pi-worktree@0.43.0
+
+# Compact transcript - https://github.com/avhagedorn/pi-compact-transcript
+pi install npm:pi-compact-transcript@0.6.2
 ```
 
 Use `manifest/packages.json` to compare every downloaded package tarball's

@@ -12,7 +12,7 @@ json_files = list(root.rglob('*.json'))
 for path in json_files:
     json.loads(path.read_text())
 manifest = json.loads((root / 'manifest/packages.json').read_text())
-assert len(manifest['packages']) == 14
+assert len(manifest['packages']) == 15
 specs = [p['spec'] for p in manifest['packages']]
 assert len(specs) == len(set(specs))
 for package in manifest['packages']:
