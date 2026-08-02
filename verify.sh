@@ -50,14 +50,12 @@ for (const pkg of manifest.packages) {
 }
 const names = new Set((settings.packages || []).map(npmName).filter(Boolean));
 for (const removed of manifest.removedPackages) if (names.has(removed)) throw new Error(`Removed package still configured: ${removed}`);
-if (settings.defaultProjectTrust !== 'ask') throw new Error('defaultProjectTrust must be ask');
 if (settings.enableInstallTelemetry !== false) throw new Error('enableInstallTelemetry must be false');
 if (settings.enableSkillCommands !== true) throw new Error('enableSkillCommands must be true');
 const jsonFiles = [
   'subagents.json',
   'pi-goal-list-loop-audit.settings.json',
   'pi-plan-mode.json',
-  'extensions/pi-permission-system/config.json',
   'extensions/pi-openai-fast.json'
 ];
 for (const rel of jsonFiles) JSON.parse(fs.readFileSync(path.join(agent, rel), 'utf8'));
@@ -171,7 +169,7 @@ if not response or not response.get('success'):
 commands = response['data']['commands']
 names = [item['name'] for item in commands]
 required = {
-    'worktree', 'lsp', 'permission-system', 'code-review', 'commit', 'doctor'
+    'worktree', 'lsp', 'code-review', 'commit', 'doctor'
 }
 missing = sorted(required.difference(names))
 duplicates = sorted(name for name, count in collections.Counter(names).items() if count > 1)

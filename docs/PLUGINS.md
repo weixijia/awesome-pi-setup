@@ -122,25 +122,7 @@ branches.
 Security: Worktrees isolate files and branches, not processes, credentials, or
 network access. The command is intentionally unavailable in headless modes.
 
-## 6. Policy
-
-### [`@gotgenes/pi-permission-system`](https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system)
-
-Adds central allow/ask/deny gates across shell, paths, tools, MCP, and Skills.
-The global policy is installed at:
-
-```text
-~/.pi/agent/extensions/pi-permission-system/config.json
-```
-
-Later matching rules win within a surface; the most restrictive applicable
-policy layer wins. Parser/gate errors fail closed.
-
-Security: this is defense in depth, not a sandbox. Common test/build commands are
-allowed for convenience, but those commands may execute repository-controlled
-code.
-
-## 7. Interface and account visibility
+## 6. Interface and account visibility
 
 ### [`@narumitw/pi-statusline`](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-statusline)
 
@@ -159,7 +141,7 @@ Adds `/fast` and optional OpenAI Priority Tier requests for explicitly supported
 models. It is installed but **disabled by default** because enabling priority can
 change billing and quota behavior.
 
-## Why three packages are removed
+## Why four packages are removed
 
 The installer removes these package identities from Pi settings if present:
 
@@ -169,6 +151,10 @@ The installer removes these package identities from Pi settings if present:
   adapter adds supply-chain surface without capability.
 - `pi-tool-display`: its deep renderer override lagged the target Pi version and
   overlapped native/extension rendering.
+- `@gotgenes/pi-permission-system`: in-process allow/ask/deny gating is not a
+  security boundary (Pi has no sandbox), while it adds a confirmation prompt to
+  every non-allowlisted tool call. Session files already record every command
+  for after-the-fact audit. Install it yourself if you want the policy layer.
 
 They are not universally bad packages. The default profile omits them because a
 capability should have a current, explicit use case.

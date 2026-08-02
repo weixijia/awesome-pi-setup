@@ -80,12 +80,6 @@
       "purpose": "Audited goals, queues, and bounded autonomous loops"
     },
     {
-      "spec": "npm:@gotgenes/pi-permission-system@24.0.0",
-      "repository": "https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system",
-      "integrity": "sha512-4WncumJPPDDs8Ulrjk7qvU3kHjQSjGyZnpLx1Nu9EkxWQZQi+qvVOpGpPGbHwlXt6rg8AjvI8zSl2Aj2bo5lfA==",
-      "purpose": "Allow, ask, and deny policy for tools, shell, and paths"
-    },
-    {
       "spec": "npm:@narumitw/pi-lsp@0.44.0",
       "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp",
       "integrity": "sha512-p9H6X7sJEBF8UPJ5hc3wVwRQkoxHnji/4tW6vsJ9RuCVuRff8UswQwZnyW/6WEmiOsBAeJRgSUbyB9l71bKIEw==",
@@ -101,6 +95,7 @@
   "removedPackages": [
     "pi-webdav-sync",
     "pi-mcp-adapter",
-    "pi-tool-display"
+    "pi-tool-display",
+    "@gotgenes/pi-permission-system"
   ]
 }

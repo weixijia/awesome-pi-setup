@@ -142,7 +142,7 @@ backup_path() {
 log "Creating private backup"
 for rel in \
   settings.json AGENTS.md subagents.json pi-goal-list-loop-audit.settings.json \
-  pi-plan-mode.json extensions/pi-permission-system/config.json \
+  pi-plan-mode.json \
   extensions/pi-openai-fast.json prompts/code-review.md prompts/commit.md prompts/doctor.md; do
   backup_path "$AGENT_DIR/$rel" "agent/$rel"
 done
@@ -221,7 +221,6 @@ settings.packages = (settings.packages || []).filter(entry => {
   const name = npmName(entry);
   return !name || (!managed.has(name) && !removed.has(name));
 });
-settings.defaultProjectTrust = 'ask';
 settings.enableInstallTelemetry = false;
 settings.enableSkillCommands = true;
 const temp = `${settingsPath}.awesome-pi-setup.tmp`;
@@ -348,7 +347,6 @@ log "Installing hardened extension configuration"
 install_config "$ROOT_DIR/config/agent/subagents.json" "$AGENT_DIR/subagents.json"
 install_config "$ROOT_DIR/config/agent/pi-goal-list-loop-audit.settings.json" "$AGENT_DIR/pi-goal-list-loop-audit.settings.json"
 install_config "$ROOT_DIR/config/agent/pi-plan-mode.json" "$AGENT_DIR/pi-plan-mode.json"
-install_config "$ROOT_DIR/config/agent/extensions/pi-permission-system/config.json" "$AGENT_DIR/extensions/pi-permission-system/config.json"
 install_config "$ROOT_DIR/config/agent/extensions/pi-openai-fast.json" "$AGENT_DIR/extensions/pi-openai-fast.json"
 install_config "$ROOT_DIR/config/web-search.json" "$PI_HOME/web-search.json"
 

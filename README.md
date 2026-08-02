@@ -111,7 +111,6 @@ Every package is pinned to an exact version. Each link points to the maintainer'
 | `@narumitw/pi-usage` | 0.43.0 | Codex, Copilot, and OpenRouter usage display | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage) |
 | `@cortexkit/pi-magic-context` | 0.33.0 | Cross-session memory and semantic context | [cortexkit/magic-context](https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin) |
 | `pi-goal-list-loop-audit` | 0.34.20 | Audited Goal/List/Loop workflows | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
-| `@gotgenes/pi-permission-system` | 24.0.0 | Allow/ask/deny policy for tools, paths, and shell commands | [gotgenes/pi-packages](https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system) |
 | `@narumitw/pi-lsp` | 0.44.0 | LSP diagnostics, definitions, references, and fixes | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | Safe interactive Git worktree management | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
 
@@ -155,11 +154,13 @@ The installer merges these keys into `settings.json`; it does not replace model,
 
 ```json
 {
-  "defaultProjectTrust": "ask",
   "enableInstallTelemetry": false,
   "enableSkillCommands": true
 }
 ```
+
+`defaultProjectTrust` is intentionally left alone: it is a per-user decision, and
+the installer must not silently reset it on every run.
 
 It also applies the following defaults:
 
@@ -179,7 +180,6 @@ The Permission System is not an operating-system sandbox. Use a container or VM 
 ## Useful commands
 
 ```text
-/permission-system
 /lsp
 /worktree
 /plan

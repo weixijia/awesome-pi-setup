@@ -111,7 +111,6 @@ Chaque extension est épinglée à une version exacte. Les liens renvoient direc
 | `@narumitw/pi-usage` | 0.43.0 | Affichage de l'utilisation de Codex, Copilot et OpenRouter | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage) |
 | `@cortexkit/pi-magic-context` | 0.33.0 | Mémoire intersessions et contexte sémantique | [cortexkit/magic-context](https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin) |
 | `pi-goal-list-loop-audit` | 0.34.20 | Workflows Goal/List/Loop assortis d'un audit indépendant | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
-| `@gotgenes/pi-permission-system` | 24.0.0 | Politique autoriser/demander/refuser pour les outils, chemins et commandes Shell | [gotgenes/pi-packages](https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system) |
 | `@narumitw/pi-lsp` | 0.44.0 | Diagnostics, définitions, références et corrections LSP | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | Gestion interactive et sûre des worktrees Git | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
 
@@ -155,11 +154,13 @@ Le programme d'installation fusionne les clés suivantes dans `settings.json`, s
 
 ```json
 {
-  "defaultProjectTrust": "ask",
   "enableInstallTelemetry": false,
   "enableSkillCommands": true
 }
 ```
+
+`defaultProjectTrust` est intentionnellement laissé tel quel : c'est une décision propre à chaque
+utilisateur, et l'installateur ne doit pas la réinitialiser silencieusement à chaque exécution.
 
 Il applique également les choix suivants :
 
@@ -179,7 +180,6 @@ Le système de permissions ne constitue pas un bac à sable au niveau du systèm
 ## Commandes utiles
 
 ```text
-/permission-system
 /lsp
 /worktree
 /plan

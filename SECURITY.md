@@ -49,22 +49,32 @@ cannot be rolled back safely without a separate package-manager snapshot.
 Never paste API keys into Pi prompts, issues, logs, or Git commits. Authenticate
 with Pi's `/login` flow or environment variables supported by the provider.
 
-## Permission policy limitations
+## No permission gate
 
-`@gotgenes/pi-permission-system` is configured to:
+This setup installs **no tool-permission extension**. Pi itself ships no
+permission gate and no sandbox — see Pi's own `docs/security.md`:
 
-- ask for sensitive file paths and project-external directories;
-- allow common read-only inspection and test commands;
-- ask for unknown commands and destructive/system/network operations;
-- deny the explicit `rm -rf /` pattern.
+> Pi does not include a built-in sandbox. Built-in tools can read files, write
+> files, edit files, and run shell commands with the permissions of the pi
+> process. Extensions are TypeScript modules that run with the same permissions.
 
-Limitations:
+Consequences:
 
-- permitted build or test commands can execute repository-controlled hooks;
+- tool calls (`read`, `write`, `edit`, `bash`) execute immediately, with no
+  confirmation prompt and no allow/ask/deny policy;
+- build or test commands can execute repository-controlled hooks;
 - interpreters can hide behavior inside scripts;
 - a compromised extension runs before or beside normal model behavior;
-- user approval can still authorize a dangerous operation;
 - this is not kernel-enforced filesystem or network isolation.
+
+Tool calls remain auditable after the fact: Pi session files under
+`~/.pi/agent/sessions/` record every command in full.
+
+If you want an allow/ask/deny policy, install a permission extension yourself
+(for example `@gotgenes/pi-permission-system`); it is intentionally not part of
+this manifest. For untrusted repositories or unattended runs, Pi's own guidance
+is to isolate the whole process in a container or VM rather than rely on
+in-process gating.
 
 ## Browser cookies
 

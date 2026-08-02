@@ -70,9 +70,6 @@ pi install npm:@cortexkit/pi-magic-context@0.33.0
 # Audited goals/loops - https://github.com/DraconDev/pi-goal-list-loop-audit
 pi install npm:pi-goal-list-loop-audit@0.34.20
 
-# Permission policy - https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system
-pi install npm:@gotgenes/pi-permission-system@24.0.0
-
 # LSP tools - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp
 pi install npm:@narumitw/pi-lsp@0.44.0
 
@@ -155,7 +152,6 @@ Review files under `config/` and copy them to the corresponding locations:
 | `config/agent/subagents.json` | `~/.pi/agent/subagents.json` |
 | `config/agent/pi-goal-list-loop-audit.settings.json` | `~/.pi/agent/pi-goal-list-loop-audit.settings.json` |
 | `config/agent/pi-plan-mode.json` | `~/.pi/agent/pi-plan-mode.json` |
-| `config/agent/extensions/pi-permission-system/config.json` | `~/.pi/agent/extensions/pi-permission-system/config.json` |
 | `config/agent/extensions/pi-openai-fast.json` | `~/.pi/agent/extensions/pi-openai-fast.json` |
 | `config/web-search.json` | `~/.pi/web-search.json` |
 | `config/cortexkit/magic-context.jsonc` | `~/.config/cortexkit/magic-context.jsonc` |
@@ -166,7 +162,6 @@ provider, theme, or unrelated packages:
 
 ```json
 {
-  "defaultProjectTrust": "ask",
   "enableInstallTelemetry": false,
   "enableSkillCommands": true
 }
@@ -199,6 +194,5 @@ From this repository:
 ./verify.sh
 ```
 
-Then run `/reload` in Pi or restart the process. Check `/permission-system`,
-`/lsp`, and `/worktree`. Use your own `/login` flow for providers; this setup does
+Then run `/reload` in Pi or restart the process. Check `/lsp` and `/worktree`. Use your own `/login` flow for providers; this setup does
 not install or migrate credentials.

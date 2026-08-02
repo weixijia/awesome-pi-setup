@@ -111,7 +111,6 @@ less install.sh
 | `@narumitw/pi-usage` | 0.43.0 | 查询 Codex、Copilot 和 OpenRouter 用量 | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage) |
 | `@cortexkit/pi-magic-context` | 0.33.0 | 跨会话记忆和语义上下文 | [cortexkit/magic-context](https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin) |
 | `pi-goal-list-loop-audit` | 0.34.20 | 带独立审计的 Goal/List/Loop | [DraconDev/pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) |
-| `@gotgenes/pi-permission-system` | 24.0.0 | 对工具、路径和 Shell 实施 allow/ask/deny 策略 | [gotgenes/pi-packages](https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system) |
 | `@narumitw/pi-lsp` | 0.44.0 | LSP 诊断、定义、引用和修复 | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp) |
 | `@narumitw/pi-worktree` | 0.43.0 | 安全管理 Git Worktree | [narumiruna/pi-extensions](https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree) |
 
@@ -155,11 +154,12 @@ ceaabed6c40ee98ba1b61e264fe1ecf527538770
 
 ```json
 {
-  "defaultProjectTrust": "ask",
   "enableInstallTelemetry": false,
   "enableSkillCommands": true
 }
 ```
+
+`defaultProjectTrust` 刻意不做处理：这是用户的个人选择，安装器不应在每次运行时静默重置它。
 
 同时应用：
 
@@ -179,7 +179,6 @@ Permission System 不是操作系统级 Sandbox。处理不可信仓库时仍应
 ## 常用命令
 
 ```text
-/permission-system
 /lsp
 /worktree
 /plan

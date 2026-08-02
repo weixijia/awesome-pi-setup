@@ -16,7 +16,7 @@ map_target() {
   case "$rel" in
     agent/settings.json|agent/AGENTS.md|agent/subagents.json|agent/pi-goal-list-loop-audit.settings.json|agent/pi-plan-mode.json)
       printf '%s/%s\n' "$AGENT_DIR" "${rel#agent/}" ;;
-    agent/extensions/pi-permission-system/config.json|agent/extensions/pi-openai-fast.json|agent/prompts/code-review.md|agent/prompts/commit.md|agent/prompts/doctor.md)
+    agent/extensions/pi-openai-fast.json|agent/prompts/code-review.md|agent/prompts/commit.md|agent/prompts/doctor.md)
       printf '%s/%s\n' "$AGENT_DIR" "${rel#agent/}" ;;
     pi/web-search.json)
       printf '%s/web-search.json\n' "$PI_HOME" ;;
@@ -72,7 +72,6 @@ restore_item() {
 for rel in \
   agent/settings.json agent/AGENTS.md agent/subagents.json \
   agent/pi-goal-list-loop-audit.settings.json agent/pi-plan-mode.json \
-  agent/extensions/pi-permission-system/config.json \
   agent/extensions/pi-openai-fast.json \
   agent/prompts/code-review.md agent/prompts/commit.md agent/prompts/doctor.md \
   pi/web-search.json config/cortexkit/magic-context.jsonc \
