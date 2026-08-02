@@ -1,16 +1,16 @@
 # Copy this prompt into Pi
 
 ```text
-请为我安装并验证公开仓库 https://github.com/weixijia/awesome-pi-setup 。
+Please install and verify the public repository https://github.com/weixijia/awesome-pi-setup for me.
 
-要求：
-1. 先克隆到临时目录，完整阅读 README.md、SECURITY.md、install.sh、verify.sh、manifest/*.json 和 scripts/restore.sh。
-2. 核对仓库 owner、当前 Git commit、15 个 npm 包的精确版本、integrity 和对应 GitHub 源码地址；发现内容与文档不一致就停止。
-3. 检查我现有的 ~/.pi/agent/settings.json，但绝对不要读取或输出 auth.json、Cookie、API Key、会话内容或其他凭据。
-4. 告诉我会保留、增加和替换什么，并在执行前向我确认。
-5. 确认后运行 ./install.sh；不要使用 curl|bash，不要加 --yes，保留交互式审批。
-6. 安装后运行 ./verify.sh，报告每项结果、备份目录和任何 npm audit 风险；不得为了通过检查而执行 npm audit fix。
-7. 不要改变我的默认模型、Provider、主题或现有登录状态。完成后提醒我 /reload 或重启 Pi。
+Requirements:
+1. Clone it into a temporary directory first. Read README.md, SECURITY.md, install.sh, verify.sh, manifest/*.json, and scripts/restore.sh in full.
+2. Verify the repository owner and current Git commit, plus the exact versions, integrity values, and linked GitHub sources of all 15 npm packages. Stop if the code and documentation disagree.
+3. Inspect my existing ~/.pi/agent/settings.json, but never read or print auth.json, cookies, API keys, session contents, or any other credentials.
+4. Explain what will be preserved, added, and replaced, then ask for my confirmation before making changes.
+5. After confirmation, run ./install.sh. Do not use curl|bash and do not add --yes; keep all interactive approvals.
+6. Run ./verify.sh afterwards. Report every result, the backup path, and any npm audit findings. Never run npm audit fix just to make the check pass.
+7. Do not change my default model, provider, theme, or existing login state. When finished, remind me to run /reload or restart Pi.
 ```
 
 ## Why this prompt is intentionally not shorter

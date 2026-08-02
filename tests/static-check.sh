@@ -22,10 +22,10 @@ for package in manifest['packages']:
     assert package['integrity'].startswith('sha512-')
 readmes = [
     (root / 'README.md').read_text(),
-    (root / 'README.fr.md').read_text(),
-    (root / 'README.zh-CN.md').read_text(),
+    (root / 'README.fr.md').read_text(encoding='utf-8'),
+    (root / 'README.zh-CN.md').read_text(encoding='utf-8'),
 ]
-manual = (root / 'docs/MANUAL_INSTALL.md').read_text()
+manual = (root / 'docs/MANUAL_INSTALL.md').read_text(encoding='utf-8')
 for package in manifest['packages']:
     name = package['spec'][4:]
     if name.startswith('@'):
@@ -51,7 +51,7 @@ for md in root.rglob('*.md'):
 for path in root.rglob('*'):
     if not path.is_file() or '.git' in path.parts:
         continue
-    text = path.read_text(errors='ignore')
+    text = path.read_text(encoding='utf-8', errors='ignore')
     assert not re.search(r'(?i)(api[_-]?key|token|secret)\s*[=:]\s*["\x27][A-Za-z0-9_\-]{20,}', text), f'possible secret in {path}'
     assert not re.search(r'\bsk-[A-Za-z0-9]{20,}\b', text), f'possible API key in {path}'
 print(f'PASS {len(json_files)} JSON files, manifest, docs, local links, and secret guard')

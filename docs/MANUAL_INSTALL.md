@@ -34,49 +34,49 @@ place and untouched.
 ## 3. Install the exact Pi packages
 
 ```bash
-# Subagents — https://github.com/gotgenes/pi-packages/tree/main/packages/pi-subagents
+# Subagents - https://github.com/gotgenes/pi-packages/tree/main/packages/pi-subagents
 pi install npm:@gotgenes/pi-subagents@19.2.1
 
-# Web access — https://github.com/nicobailon/pi-web-access
+# Web access - https://github.com/nicobailon/pi-web-access
 pi install npm:pi-web-access@0.17.1
 
-# Todo — https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-todo
+# Todo - https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-todo
 pi install npm:@juicesharp/rpiv-todo@2.3.1
 
-# Structured questions — https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-ask-user-question
+# Structured questions - https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-ask-user-question
 pi install npm:@juicesharp/rpiv-ask-user-question@2.3.1
 
-# Plan mode — https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-plan-mode
+# Plan mode - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-plan-mode
 pi install npm:@narumitw/pi-plan-mode@0.44.0
 
-# AGENTS/CLAUDE maintenance skills — https://github.com/mrclrchtr/supi/tree/main/packages/supi-claude-md
+# AGENTS/CLAUDE maintenance skills - https://github.com/mrclrchtr/supi/tree/main/packages/supi-claude-md
 pi install npm:@mrclrchtr/supi-claude-md@4.4.0
 
-# Cache optimization — https://github.com/jiangge/pi-cache-optimizer
+# Cache optimization - https://github.com/jiangge/pi-cache-optimizer
 pi install npm:pi-cache-optimizer@2.6.25
 
-# Status line — https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-statusline
+# Status line - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-statusline
 pi install npm:@narumitw/pi-statusline@0.43.0
 
-# Optional OpenAI priority toggle — https://github.com/ben-vargas/pi-packages/tree/main/packages/pi-openai-fast
+# Optional OpenAI priority toggle - https://github.com/ben-vargas/pi-packages/tree/main/packages/pi-openai-fast
 pi install npm:@benvargas/pi-openai-fast@1.0.5
 
-# Usage display — https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage
+# Usage display - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage
 pi install npm:@narumitw/pi-usage@0.43.0
 
-# Long-term context — https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin
+# Long-term context - https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin
 pi install npm:@cortexkit/pi-magic-context@0.33.0
 
-# Audited goals/loops — https://github.com/DraconDev/pi-goal-list-loop-audit
+# Audited goals/loops - https://github.com/DraconDev/pi-goal-list-loop-audit
 pi install npm:pi-goal-list-loop-audit@0.34.20
 
-# Permission policy — https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system
+# Permission policy - https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system
 pi install npm:@gotgenes/pi-permission-system@24.0.0
 
-# LSP tools — https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp
+# LSP tools - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp
 pi install npm:@narumitw/pi-lsp@0.44.0
 
-# Git worktrees — https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree
+# Git worktrees - https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree
 pi install npm:@narumitw/pi-worktree@0.43.0
 ```
 
@@ -138,10 +138,10 @@ npm install-scripts ls
 
 For this snapshot, required packages are expected to be exactly:
 
-- `tree-sitter-bash@0.25.1` — native parser build
-- `onnxruntime-node@1.24.3` — local embedding runtime
-- `protobufjs@7.6.5` — dependency compatibility check
-- `sharp@0.34.5` — native image runtime check
+- `tree-sitter-bash@0.25.1` - native parser build
+- `onnxruntime-node@1.24.3` - local embedding runtime
+- `protobufjs@7.6.5` - dependency compatibility check
+- `sharp@0.34.5` - native image runtime check
 
 Inspect the installed scripts and versions before approving them. Do not approve
 unexpected package names.

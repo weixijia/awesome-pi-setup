@@ -1,18 +1,18 @@
 # Awesome Pi Setup
 
-**English** | [Français](README.fr.md) | [简体中文](README.zh-CN.md)
+**English** | [Francais](README.fr.md) | [Chinese](README.zh-CN.md)
 
 A practical, security-conscious global configuration for [Pi Coding Agent](https://github.com/earendil-works/pi), verified against a real installation.
 
-This is not a “more plugins must be better” bundle. It is a deliberately bounded setup focused on:
+This is not a "more plugins must be better" bundle. It is a deliberately bounded setup focused on:
 
-- **Safety controls** — confirmation or denial for sensitive paths, external directories, and dangerous shell operations
-- **Code intelligence** — LSP diagnostics, definitions, references, symbols, and source fixes
-- **Long-running work** — planning, todos, subagents, and audited Goal/List/Loop workflows
-- **Web research** — search, webpage/PDF/GitHub/video extraction, and source checking
-- **Long-term context** — cross-session memory, semantic search, and durable project knowledge
-- **Recovery** — private pre-install backups and an allowlisted restore script
-- **Auditable supply chain** — exact package versions, verified tarball integrity, installed-file comparison, and source links
+- **Safety controls** - confirmation or denial for sensitive paths, external directories, and dangerous shell operations
+- **Code intelligence** - LSP diagnostics, definitions, references, symbols, and source fixes
+- **Long-running work** - planning, todos, subagents, and audited Goal/List/Loop workflows
+- **Web research** - search, webpage/PDF/GitHub/video extraction, and source checking
+- **Long-term context** - cross-session memory, semantic search, and durable project knowledge
+- **Recovery** - private pre-install backups and an allowlisted restore script
+- **Auditable supply chain** - exact package versions, verified tarball integrity, installed-file comparison, and source links
 
 > Snapshot: **2026-08-02**. Minimum versions: Pi **0.83.0**, Node.js **22**.
 
@@ -233,12 +233,12 @@ The restore script accepts only the documented configuration and Skill allowlist
 
 ## Deliberately not installed
 
-- **Provider credentials** — configure them yourself with Pi's `/login`
-- **MCP** — do not add its attack surface without a concrete server
-- **WebDAV sync** — it can copy credentials, sessions, or executable extensions
-- **Browser automation** — enable it per project with a dedicated low-privilege profile
-- **A second memory, todo, planner, or subagent system** — avoid overlapping behavior and event conflicts
-- **A fake “sandbox” label** — permission prompts do not replace a container or VM
+- **Provider credentials** - configure them yourself with Pi's `/login`
+- **MCP** - do not add its attack surface without a concrete server
+- **WebDAV sync** - it can copy credentials, sessions, or executable extensions
+- **Browser automation** - enable it per project with a dedicated low-privilege profile
+- **A second memory, todo, planner, or subagent system** - avoid overlapping behavior and event conflicts
+- **A fake "sandbox" label** - permission prompts do not replace a container or VM
 
 ## Known risks
 
