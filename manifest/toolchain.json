@@ -1,0 +1,65 @@
+{
+  "snapshotDate": "2026-08-02",
+  "node": {
+    "minimumVersion": "22.0.0",
+    "repository": "https://github.com/nodejs/node"
+  },
+  "npmGlobal": [
+    {
+      "spec": "@biomejs/biome@2.5.6",
+      "command": "biome",
+      "repository": "https://github.com/biomejs/biome"
+    },
+    {
+      "spec": "bash-language-server@5.6.0",
+      "command": "bash-language-server",
+      "repository": "https://github.com/bash-lsp/bash-language-server"
+    },
+    {
+      "spec": "yaml-language-server@1.24.0",
+      "command": "yaml-language-server",
+      "repository": "https://github.com/redhat-developer/yaml-language-server"
+    }
+  ],
+  "uvTools": [
+    {
+      "spec": "ruff==0.16.1",
+      "command": "ruff",
+      "repository": "https://github.com/astral-sh/ruff"
+    },
+    {
+      "spec": "ty==0.0.65",
+      "command": "ty",
+      "repository": "https://github.com/astral-sh/ty"
+    }
+  ],
+  "systemServers": [
+    {
+      "command": "clangd",
+      "repository": "https://github.com/llvm/llvm-project",
+      "note": "Usually supplied by Xcode Command Line Tools on macOS"
+    },
+    {
+      "command": "sourcekit-lsp",
+      "repository": "https://github.com/swiftlang/sourcekit-lsp",
+      "note": "Supplied by Xcode on macOS"
+    }
+  ],
+  "skills": {
+    "repository": "https://github.com/narumiruna/pi-extensions",
+    "commit": "ceaabed6c40ee98ba1b61e264fe1ecf527538770",
+    "names": [
+      "applying-tdd",
+      "reviewing-code",
+      "writing-git-commits",
+      "hardening-code-paths",
+      "designing-user-experiences"
+    ]
+  },
+  "reviewedInstallScripts": {
+    "tree-sitter-bash": "0.25.1",
+    "onnxruntime-node": "1.24.3",
+    "protobufjs": "7.6.5",
+    "sharp": "0.34.5"
+  }
+}

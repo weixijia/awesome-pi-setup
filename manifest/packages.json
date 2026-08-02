@@ -1,0 +1,106 @@
+{
+  "$schema": "./packages.schema.json",
+  "snapshotDate": "2026-08-02",
+  "pi": {
+    "name": "@earendil-works/pi-coding-agent",
+    "minimumVersion": "0.83.0",
+    "repository": "https://github.com/earendil-works/pi"
+  },
+  "packages": [
+    {
+      "spec": "npm:@gotgenes/pi-subagents@19.2.1",
+      "repository": "https://github.com/gotgenes/pi-packages/tree/main/packages/pi-subagents",
+      "integrity": "sha512-XEAIXREl9xyblvRSNYEfYNaFfaMODeq//340Z8QKhdluNt/jsZfGkSUwBb/BAxT9Mmw81KJRav1YNRrG07ZGyA==",
+      "purpose": "Foreground and background subagents with steering and resume"
+    },
+    {
+      "spec": "npm:pi-web-access@0.17.1",
+      "repository": "https://github.com/nicobailon/pi-web-access",
+      "integrity": "sha512-AZaDlr6HE4Mn3P7/bokbukGcTqlqGqy/Am+vurxfk9g6L2iZMERLIEAMcZI7aFamrNBBcJ+js1B70ZSgye2xEQ==",
+      "purpose": "Web search, extraction, video analysis, and source checking"
+    },
+    {
+      "spec": "npm:@juicesharp/rpiv-todo@2.3.1",
+      "repository": "https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-todo",
+      "integrity": "sha512-KpotWV5NKeWEFM35HFO6KB7OxCb1E2OSs1fpxDz7TOhTSRm4ymSV0L+xNFcoq4gSHk5x/ATDnYlAh6cNEL9mHQ==",
+      "purpose": "Persistent model-managed task list"
+    },
+    {
+      "spec": "npm:@juicesharp/rpiv-ask-user-question@2.3.1",
+      "repository": "https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-ask-user-question",
+      "integrity": "sha512-2FeQ3U3GXLNKBU7BBC2wVdBmoBb7Asb7DIJLw5o2ZsHgRttIHEaZD8kLRCIVAUpmQEsC2xywiEaplvZNqWgZgg==",
+      "purpose": "Structured interactive clarification questions"
+    },
+    {
+      "spec": "npm:@narumitw/pi-plan-mode@0.44.0",
+      "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-plan-mode",
+      "integrity": "sha512-2YgbsHCut4urJ69GJqBg1lyqDs8J6e1CsZparnA6aovRbpPS3TN3nG1fC00hsSD970ei82vpqVaPx4TJFtKbEg==",
+      "purpose": "Read-only planning workflow"
+    },
+    {
+      "spec": "npm:@mrclrchtr/supi-claude-md@4.4.0",
+      "repository": "https://github.com/mrclrchtr/supi/tree/main/packages/supi-claude-md",
+      "integrity": "sha512-sAi0tBwq5iz4Hs8EpFWFY8Ae7NNMJOM4I0hE8jmiDSN/s4/w6CJAJLdNj4RG1rw4/MpmYCF6z2rB3alrkvF8ag==",
+      "purpose": "AGENTS.md and CLAUDE.md maintenance skills"
+    },
+    {
+      "spec": "npm:pi-cache-optimizer@2.6.25",
+      "repository": "https://github.com/jiangge/pi-cache-optimizer",
+      "integrity": "sha512-MF9mRapNFyFszbJgZXp1FnPeZw2R4ykC5jBgHSnV821PfHIvLszBP+Z1emSHBe06z6vauGC5Yl9/ZfH0iYN+Og==",
+      "purpose": "Prompt-cache optimization and diagnostics"
+    },
+    {
+      "spec": "npm:@narumitw/pi-statusline@0.43.0",
+      "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-statusline",
+      "integrity": "sha512-g3kyEaFrpHy4TPLM+APZCajx0GIndezUeAcsGGpf+7lE9O5DlvJJBaZa26vsV4GDXgVIhXNa9B5bdF0EH7sKjQ==",
+      "purpose": "Responsive model, Git, context, and usage status line"
+    },
+    {
+      "spec": "npm:@benvargas/pi-openai-fast@1.0.5",
+      "repository": "https://github.com/ben-vargas/pi-packages/tree/main/packages/pi-openai-fast",
+      "integrity": "sha512-IjWmR0CC8gxdJZlBzKYpaLcmjYWYBb2Wv0LjRbDO23e6PRzikoDMRtEzbnlsVo42Esv+jzMjaHw4POdi88yE5w==",
+      "purpose": "Optional OpenAI priority service-tier toggle"
+    },
+    {
+      "spec": "npm:@narumitw/pi-usage@0.43.0",
+      "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-usage",
+      "integrity": "sha512-u3b2d6bqti+c0GwhY3Zys1l7LzsDI9ddeLOtHepI82ksNtbtkeY2RsuEapC7yWl3lb5e/o/kNFyCGbLG95fydw==",
+      "purpose": "Codex, Copilot, and OpenRouter quota display"
+    },
+    {
+      "spec": "npm:@cortexkit/pi-magic-context@0.33.0",
+      "repository": "https://github.com/cortexkit/magic-context/tree/master/packages/pi-plugin",
+      "integrity": "sha512-jURbXoErpeHzwLEpxsRJlYUOETRnYlMA0NsX4VlTtg99ICltfQYc/262IFV1ctMsH4x72iJeBsA4NFpUoklifw==",
+      "purpose": "Cross-session memory and semantic context"
+    },
+    {
+      "spec": "npm:pi-goal-list-loop-audit@0.34.20",
+      "repository": "https://github.com/DraconDev/pi-goal-list-loop-audit",
+      "integrity": "sha512-CQVmRQkkFbFICcsFarIjMChU4mkcv1vQ90s0UD5AQFJ7YwKZ02yE4yGesqT3LZrDNYBvkXSHXSX6Mlqg7JVCWg==",
+      "purpose": "Audited goals, queues, and bounded autonomous loops"
+    },
+    {
+      "spec": "npm:@gotgenes/pi-permission-system@24.0.0",
+      "repository": "https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system",
+      "integrity": "sha512-4WncumJPPDDs8Ulrjk7qvU3kHjQSjGyZnpLx1Nu9EkxWQZQi+qvVOpGpPGbHwlXt6rg8AjvI8zSl2Aj2bo5lfA==",
+      "purpose": "Allow, ask, and deny policy for tools, shell, and paths"
+    },
+    {
+      "spec": "npm:@narumitw/pi-lsp@0.44.0",
+      "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-lsp",
+      "integrity": "sha512-p9H6X7sJEBF8UPJ5hc3wVwRQkoxHnji/4tW6vsJ9RuCVuRff8UswQwZnyW/6WEmiOsBAeJRgSUbyB9l71bKIEw==",
+      "purpose": "Language-server diagnostics and source fixes"
+    },
+    {
+      "spec": "npm:@narumitw/pi-worktree@0.43.0",
+      "repository": "https://github.com/narumiruna/pi-extensions/tree/main/extensions/pi-worktree",
+      "integrity": "sha512-ak/XIpVSLrc2PaGrgAhHJnyQzwVCZePnmMODltS8ahhnfRLqSoI17d5SOBNCoj7V4fd9UcDKRqHRQsNMtrkKPg==",
+      "purpose": "Safe interactive Git worktree management"
+    }
+  ],
+  "removedPackages": [
+    "pi-webdav-sync",
+    "pi-mcp-adapter",
+    "pi-tool-display"
+  ]
+}

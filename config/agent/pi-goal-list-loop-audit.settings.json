@@ -1,0 +1,8 @@
+{
+  "autoAcceptDrafts": false,
+  "autoResume": false,
+  "aggressiveMode": false,
+  "tokenLimit": 4000000,
+  "auditCap": 3,
+  "auditFeedbackChars": 12000
+}

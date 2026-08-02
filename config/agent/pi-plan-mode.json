@@ -1,0 +1,21 @@
+{
+  "thinkingLevel": "inherit",
+  "defaultPlanTools": [
+    "read",
+    "bash",
+    "grep",
+    "find",
+    "ls",
+    "ask_user_question",
+    "web_search",
+    "source_check",
+    "fetch_content",
+    "get_search_content",
+    "lsp_diagnostics",
+    "lsp_hover",
+    "lsp_definition",
+    "lsp_references",
+    "lsp_document_symbols",
+    "lsp_workspace_symbols"
+  ]
+}

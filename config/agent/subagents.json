@@ -1,0 +1,8 @@
+{
+  "maxConcurrent": 2,
+  "defaultMaxTurns": 30,
+  "graceTurns": 3,
+  "consumedSessionRetentionMinutes": 10,
+  "unconsumedSessionRetentionMinutes": 120,
+  "abortAllOnInterrupt": true
+}
