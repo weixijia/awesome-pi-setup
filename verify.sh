@@ -90,8 +90,8 @@ if [ "$SKIP_LSP" -eq 0 ]; then
   ruff --version | grep -q '0.16.1' || fail "Unexpected Ruff version"
   ty --version | grep -q '0.0.65' || fail "Unexpected ty version"
   pass "Pinned language-server toolchain"
-  command -v clangd >/dev/null 2>&1 && pass "clangd available" || warn "clangd unavailable (optional)"
-  command -v sourcekit-lsp >/dev/null 2>&1 && pass "sourcekit-lsp available" || warn "sourcekit-lsp unavailable (optional)"
+  if command -v clangd >/dev/null 2>&1; then pass "clangd available"; else warn "clangd unavailable (optional)"; fi
+  if command -v sourcekit-lsp >/dev/null 2>&1; then pass "sourcekit-lsp available"; else warn "sourcekit-lsp unavailable (optional)"; fi
 fi
 
 if npm install-scripts --help >/dev/null 2>&1; then
